@@ -3,7 +3,7 @@ import React from "react";
 function MainContent(){
     return (
         <main>
-            <h1>hello jsx</h1>
+            <h1>I love to visit New York, Paris, and Tokyo.</h1>
         </main>
     );
 }

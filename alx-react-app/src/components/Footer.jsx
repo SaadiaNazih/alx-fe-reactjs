@@ -2,7 +2,7 @@ import React  from "react";
      function Footer(){
         return(
             <footer>
-  <p>Marrakech is one of my favorite cities</p>
+  <p>© 2023 City Lovers</p>
 </footer>
         );
 
