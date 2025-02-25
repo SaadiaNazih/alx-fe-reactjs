@@ -13,6 +13,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
+
+            <div>
+              <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+            </div>
+          );
     <> 
         <UserProfile/>
         <Header />
@@ -44,3 +49,5 @@ function App() {
 }
 
 export default App
+
+
