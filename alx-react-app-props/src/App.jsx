@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -8,8 +9,19 @@ import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import UserProfile from './components/UserProfile'
 import ProfilePage from './ProfilePage';
-import UserContext from './components/UserContext'
+import UserContext from './components/UserContext';
 
+function App (){
+  const usData ={
+    nome: "Jeanluca", 
+    email: "Jeanluca98@gmail.com"
+  };
+  return(
+    <UserContext.Provider value={usData}>
+      <ProfilePage/>
+    </UserContext.Provider>
+  );
+}
 { 
 
   return (
@@ -19,6 +31,7 @@ import UserContext from './components/UserContext'
     );
     
     <> 
+        <UserContext/>
         <ProfilePage/>
         <UserProfile/>
         <Header />
